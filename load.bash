@@ -6,6 +6,9 @@
 # else we try to recreate it here
 BATS_SAVED_PATH="${BATS_SAVED_PATH-$PATH}"
 
+# shellcheck source=./src/output.bash
 source "$(dirname "${BASH_SOURCE[0]}")/src/output.bash"
+# shellcheck source=./src/error.bash
 source "$(dirname "${BASH_SOURCE[0]}")/src/error.bash"
+# shellcheck source=./src/lang.bash
 source "$(dirname "${BASH_SOURCE[0]}")/src/lang.bash"
